@@ -47,7 +47,7 @@ class Game
   end
 
   def display_scores
-    puts "Final Scores:"
+    puts "Scores:"
     @players.each {|player| puts "#{player.name}: #{player.lives} lives"}
   end
 
