@@ -10,6 +10,7 @@ class Game
 
   def start
     puts "STARTING GAME ..."
+
     while !game_over?
       current_player = @players[@current_player_index]
       other_player = @players[1 - @current_player_index]
@@ -39,7 +40,7 @@ class Game
   end
 
 
-
+  private
 
   def game_over?
     @players.any? {|player| player.lives <= 0}
